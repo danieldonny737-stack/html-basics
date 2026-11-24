@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contact Daniel Donny to discuss a website, digital product, or collaboration.">
+    <meta name="theme-color" content="#111827">
+    <title>Contact | Daniel Donny</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= Navigation ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a class="logo" href="index.html">Daniel<span>Studio</span></a>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="projects.html">Projects</a></li>
+
+                <li><a href="About.html">About</a></li>
+
+                <li><a href="Contact.html" class="active" aria-current="page">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= Banner ================= -->
+
+    <section class="page-banner">
+
+        <h1>Contact Me</h1>
+
+        <p>
+
+            Let's discuss your next project or collaboration.
+
+        </p>
+
+    </section>
+
+    <!-- ================= Contact Section ================= -->
+
+    <section class="contact-page">
+
+        <div class="contact-info">
+
+            <h2>Get In Touch</h2>
+
+            <p>
+
+                Have a project in mind or simply want to say hello?
+                Send me a note and I’ll get back to you.
+
+            </p>
+
+            <div class="info">
+
+                <p>
+
+                    <i class="fas fa-envelope"></i>
+
+                    <a href="mailto:danieldon737@gmail.com">danieldon737@gmail.com</a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="contact-form">
+
+            <form id="contact-form">
+
+                <p class="form-note">Submitting opens your email app with the message ready to send.</p>
+
+                <input type="text" placeholder="Full Name" aria-label="Full name" required>
+
+                <input type="email" placeholder="Email Address" aria-label="Email address" required>
+
+                <input type="text" placeholder="Subject" aria-label="Subject" required>
+
+                <textarea rows="7" placeholder="Write your message..." aria-label="Message" required></textarea>
+
+                <button type="submit" class="btn">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-container">
+
+            <div class="faq-card">
+
+                <h3>
+
+                    How quickly do you reply?
+
+                </h3>
+
+                <p>
+
+                    Usually within 24 hours.
+
+                </p>
+
+            </div>
+
+            <div class="faq-card">
+
+                <h3>
+
+                    Do you accept freelance projects?
+
+                </h3>
+
+                <p>
+
+                    Yes, I work with individuals,
+                    businesses and organizations.
+
+                </p>
+
+            </div>
+
+            <div class="faq-card">
+
+                <h3>
+
+                    Can I request a redesign?
+
+                </h3>
+
+                <p>
+
+                    Absolutely! Website redesigns
+                    are among my favourite projects.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <p>
+
+            © 2026 Daniel Donny. All Rights Reserved.
+
+        </p>
+
+        <a class="footer-home-link" href="index.html">Back to home</a>
+
+    </footer>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const fields = event.currentTarget.elements;
+            const subject = encodeURIComponent(fields[2].value);
+            const body = encodeURIComponent(
+                "Name: " + fields[0].value + "\n" +
+                "Email: " + fields[1].value + "\n\n" +
+                fields[3].value
+            );
+            window.location.href = "mailto:danieldon737@gmail.com?subject=" + subject + "&body=" + body;
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daniel Donny designs and builds accessible, responsive websites and digital products, including Turkana West Connect.">
+    <meta name="theme-color" content="#111827">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Daniel Donny | Web Designer & Developer">
+    <meta property="og:description" content="Thoughtful design and responsive development for useful digital experiences.">
+    <title>Daniel Donny | Web Designer & Developer</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="#home">Daniel<span>Studio</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active" aria-current="page">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Let's talk <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-hero" id="home">
+            <div class="container home-hero-grid">
+                <div class="home-hero-copy">
+                    <p class="eyebrow dark"><span class="availability-dot"></span> Independent designer & developer</p>
+                    <h1>Digital experiences, made <span>clear.</span></h1>
+                    <p class="home-lead">
+                        I'm Daniel. I design and build modern websites that bring good ideas
+                        to life with thoughtful visuals, useful details, and responsive code.
+                    </p>
+                    <div class="home-actions">
+                        <a href="projects.html" class="btn home-primary-button">Explore my work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="About.html" class="home-text-link">A little about me <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="home-hero-note">
+                        <span class="availability-dot"></span>
+                        <span>Open to select projects and collaborations</span>
+                    </div>
+                </div>
+
+                <div class="home-visual" aria-label="A preview of Daniel's creative workspace">
+                    <div class="visual-orbit orbit-one"></div>
+                    <div class="visual-orbit orbit-two"></div>
+                    <div class="workspace-card">
+                        <div class="workspace-topline">
+                            <span class="workspace-label"><span class="workspace-dot"></span> CREATIVE SPACE</span>
+                            <span class="workspace-index">01 / 04</span>
+                        </div>
+                        <div class="workspace-monogram" aria-hidden="true">D<span>.</span></div>
+                        <div class="workspace-caption">
+                            <div>
+                                <span class="workspace-kicker">Design with intention</span>
+                                <h2>Ideas into<br>experiences.</h2>
+                            </div>
+                            <span class="workspace-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </div>
+                        <div class="workspace-bottom">
+                            <span>DESIGN</span>
+                            <span>DEVELOPMENT</span>
+                            <span>DETAIL</span>
+                        </div>
+                    </div>
+                    <div class="home-clock" aria-label="Your local time">
+                        <div class="clock-heading">
+                            <span class="clock-icon"><i class="fa-regular fa-clock" aria-hidden="true"></i></span>
+                            <span>YOUR LOCAL TIME</span>
+                        </div>
+                        <time id="local-time" class="clock-time">--:--:--</time>
+                        <div class="clock-date" id="local-date">Loading local date...</div>
+                    </div>
+                    <i class="fa-solid fa-asterisk visual-spark spark-one" aria-hidden="true"></i>
+                    <i class="fa-solid fa-asterisk visual-spark spark-two" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="home-scroll-cue" aria-hidden="true"><span></span> SCROLL TO EXPLORE</div>
+        </section>
+
+        <section class="home-about" id="about">
+            <div class="container home-about-grid">
+                <div class="home-about-art" aria-hidden="true">
+                    <span class="home-about-monogram">D<span>.</span></span>
+                    <span class="home-about-caption">DESIGN · BUILD · REFINE</span>
+                </div>
+                <div class="home-about-copy">
+                    <p class="eyebrow dark">A little about me</p>
+                    <h2>Hi, I'm Daniel.<br>I make the web feel <span>human.</span></h2>
+                    <p>
+                        I'm a web designer and front-end developer who enjoys turning ideas
+                        into clear, useful, and welcoming digital experiences.
+                    </p>
+                    <p>
+                        My work brings thoughtful visual design together with responsive,
+                        accessible code. I care about the details that make a website easier
+                        to understand and more enjoyable to use.
+                    </p>
+                    <a href="About.html" class="home-text-link">More about me <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-skills" id="skills">
+            <div class="container">
+                <div class="home-section-heading">
+                    <div>
+                        <p class="eyebrow dark">Tools and strengths</p>
+                        <h2>How I bring ideas to life</h2>
+                    </div>
+                </div>
+                <div class="home-skills-grid">
+                    <article class="home-skill-card">
+                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        <h3>Semantic HTML</h3>
+                        <p>Clear structure that helps people and browsers understand your content.</p>
+                    </article>
+                    <article class="home-skill-card">
+                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        <h3>Responsive CSS</h3>
+                        <p>Layouts and visual systems that adapt gracefully to different screens.</p>
+                    </article>
+                    <article class="home-skill-card">
+                        <i class="fa-brands fa-js" aria-hidden="true"></i>
+                        <h3>JavaScript</h3>
+                        <p>Useful interactions that make digital experiences feel natural.</p>
+                    </article>
+                    <article class="home-skill-card">
+                        <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Thoughtful page flows, readable content, and consistent interfaces.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-work" id="work">
+            <div class="container">
+                <div class="home-section-heading">
+                    <div>
+                        <p class="eyebrow dark">A project built for community</p>
+                        <h2>Selected work</h2>
+                    </div>
+                    <a href="projects.html" class="home-text-link">Project details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="home-project-grid">
+                    <article class="home-real-project turkana-project">
+                        <a class="home-portfolio-preview" href="turkana-west/index.html" target="_blank" rel="noopener" aria-label="Open Turkana West Connect website">
+                            <div class="portfolio-browser-bar">
+                                <span class="browser-dots"><i></i><i></i><i></i></span>
+                                <span>turkana-west-connect</span>
+                                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                            </div>
+                            <div class="turkana-preview-page">
+                                <div class="turkana-preview-nav">
+                                    <span>Turkana West <em>Connect</em></span>
+                                    <span>Community &nbsp; Reports &nbsp; Services</span>
+                                </div>
+                                <div class="turkana-preview-hero">
+                                    <div class="turkana-preview-copy">
+                                        <span class="turkana-preview-label">COMMUNITY PLATFORM</span>
+                                        <strong>Connecting Communities.<br><em>Creating Opportunities.</em></strong>
+                                        <span class="turkana-preview-button">EXPLORE COMMUNITY&nbsp; <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                                    </div>
+                                    <div class="turkana-preview-image" aria-hidden="true">
+                                        <span>TW</span>
+                                    </div>
+                                </div>
+                                <div class="turkana-preview-cards" aria-hidden="true">
+                                    <span><i class="fa-solid fa-droplet"></i><b>Latest Reports</b></span>
+                                    <span><i class="fa-solid fa-briefcase"></i><b>Opportunities</b></span>
+                                    <span><i class="fa-solid fa-users"></i><b>Community</b></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="home-real-project-info">
+                            <div>
+                                <span class="home-project-type">COMMUNITY PLATFORM / 2026</span>
+                                <h3>Turkana West Connect</h3>
+                                <p>A community platform that connects refugee and host communities with services, opportunities, organizations, reports, and local updates.</p>
+                                <div class="tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">PWA</span>
+                                </div>
+                            </div>
+                            <a class="home-text-link" href="turkana-west/index.html" target="_blank" rel="noopener">Visit the website <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-services" id="services">
+            <div class="container">
+                <div class="home-section-heading home-services-heading">
+                    <div>
+                        <p class="eyebrow">From first sketch to final pixel</p>
+                        <h2>How I can help</h2>
+                    </div>
+                    <a href="services.html" class="home-services-more">Service details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="home-services-grid">
+                    <article class="home-service-card">
+                        <span>01</span><i class="fa-solid fa-code" aria-hidden="true"></i>
+                        <h3>Web development</h3>
+                        <p>Modern, responsive websites built around your goals and your audience.</p>
+                    </article>
+                    <article class="home-service-card">
+                        <span>02</span><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>
+                        <h3>UI/UX design</h3>
+                        <p>Clear page structures and intuitive interfaces that are easy to use.</p>
+                    </article>
+                    <article class="home-service-card">
+                        <span>03</span><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+                        <h3>Responsive design</h3>
+                        <p>Carefully adapted layouts for phones, tablets, laptops, and desktops.</p>
+                    </article>
+                    <article class="home-service-card">
+                        <span>04</span><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                        <h3>Website care</h3>
+                        <p>Practical updates and refinements to keep your site working smoothly.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-process">
+            <div class="container">
+                <div class="home-process-intro">
+                    <p class="eyebrow dark">A simple, collaborative approach</p>
+                    <h2>Good work, step by step.</h2>
+                </div>
+                <div class="home-process-grid">
+                    <article><span>01</span><h3>Discover</h3><p>We clarify the goals, audience, and needs behind the project.</p></article>
+                    <article><span>02</span><h3>Design</h3><p>I shape the structure and visual direction around those goals.</p></article>
+                    <article><span>03</span><h3>Build</h3><p>I develop and refine a responsive experience across devices.</p></article>
+                    <article><span>04</span><h3>Launch</h3><p>We review the finished work and prepare it for people to use.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-contact" id="contact">
+            <div class="container home-contact-inner">
+                <p class="eyebrow dark">Have a project in mind?</p>
+                <h2>Let's make it happen.</h2>
+                <p>Tell me what you're building, and let's make something people enjoy using.</p>
+                <a href="mailto:danieldon737@gmail.com" class="btn home-primary-button">Email Daniel <i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                <a class="home-contact-email" href="mailto:danieldon737@gmail.com">danieldon737@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Daniel. All Rights Reserved.</p>
+        <a href="#home" class="footer-home-link">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+    </footer>
+
+    <script>
+        const timeElement = document.getElementById("local-time");
+        const dateElement = document.getElementById("local-date");
+        const timeFormatter = new Intl.DateTimeFormat(undefined, {
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+        });
+        const dateFormatter = new Intl.DateTimeFormat(undefined, {
+            weekday: "long",
+            month: "long",
+            day: "numeric"
+        });
+
+        function updateLocalClock() {
+            const now = new Date();
+            timeElement.textContent = timeFormatter.format(now);
+            timeElement.dateTime = now.toISOString();
+            dateElement.textContent = dateFormatter.format(now);
+        }
+
+        updateLocalClock();
+        window.setInterval(updateLocalClock, 1000);
+    </script>
+</body>
+
+</html>
